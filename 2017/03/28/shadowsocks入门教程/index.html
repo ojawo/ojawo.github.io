@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://7xkzrn.com1.z0.glb.clouddn.com/11.1.png">
 <meta property="og:image" content="http://7xkzrn.com1.z0.glb.clouddn.com/13.jpg">
 <meta property="og:image" content="http://7xkzrn.com1.z0.glb.clouddn.com/14.jpg">
-<meta property="og:updated_time" content="2017-03-28T09:52:58.652Z">
+<meta property="og:updated_time" content="2017-03-28T10:00:29.658Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shadowsocks入门教程">
 <meta name="twitter:description" content="shadowsocks入门教程标签： 翻墙 shadowsocks
@@ -84,7 +84,7 @@
 				<h1 class="site-name"><a href="/" title="Under the Dome">Under the Dome</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -100,7 +100,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -123,14 +123,14 @@
 		<a href="/about" title="chao" target="_blank" itemprop="author">chao</a>
 		
   <p class="article-time">
-    <time datetime="2017-03-28T09:49:29.000Z" itemprop="datePublished"> 發表於 2017-03-28</time>
+    <time datetime="2017-03-28T09:49:29.000Z" itemprop="datePublished"> Published 2017-03-28</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目錄</strong>
+			<strong class="toc-title">Contents</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#shadowsocks入门教程"><span class="toc-number">1.</span> <span class="toc-text">shadowsocks入门教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-准备工作："><span class="toc-number">1.0.1.</span> <span class="toc-text">一. 准备工作：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-基本用法："><span class="toc-number">1.0.2.</span> <span class="toc-text">二. 基本用法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-高级用法："><span class="toc-number">1.0.3.</span> <span class="toc-text">三. 高级用法：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-代理服务器模式"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">1. 代理服务器模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-自动切换模式"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">2. 自动切换模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-PAC情景模式"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">3. PAC情景模式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-共享翻墙网络"><span class="toc-number">1.0.4.</span> <span class="toc-text">四. 共享翻墙网络</span></a></li></ol></li></ol></li></ol>
 		
@@ -148,9 +148,10 @@
 <li>在如图所示的shadowsocks客户端中填入你的服务器IP、端口、密码、加密方式后点击 <code>添加</code> 按钮。<em>（免费的shadowsocks账号可从网上搜索得到，也可自己买一个vps后自己搭建shadowsocks服务器端，详见<a href="http://shadowsocks.blogspot.com/2015/01/shadowsocks.html" target="_blank" rel="external">史上最详尽Shadowsocks从零开始一站式翻墙教程</a>）</em><br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/1.jpg" alt="1"></li>
 </ol>
 <h3 id="二-基本用法："><a href="#二-基本用法：" class="headerlink" title="二. 基本用法："></a>二. 基本用法：</h3><p>最简单的用法就是直接勾选 <code>启用系统代理</code>，在 <code>系统代理模式</code> 中有 <code>pac模式</code> 和 <code>全局模式</code> 两种。<code>pac模式</code> 是代理自动配置模式，凡是在pac文件中的网址都会自动代理；<code>全局模式</code> 是不管你访问国内网站还是国外网站都使用代理。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/2.jpg" alt="2"><br>启用系统代理后，不管你是使用chrome还是IE浏览器，都可以翻墙了，不需要进行额外的设置，即“傻瓜式翻墙”。<br>若其他软件如qq、百度云管家也要使用代理的话，设置代理服务器为 <strong>127.0.0.1</strong>，端口为<strong>1080</strong>（默认代理端口为1080，可更改为自己想要的端口，后文采用默认代理端口）<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/12.jpg" alt="3"></p>
-<h3 id="三-高级用法："><a href="#三-高级用法：" class="headerlink" title="三. 高级用法："></a>三. 高级用法：</h3><p>高级用法是在不勾选 <code>启用系统代理</code> 的基础上进行的。shadowsocks在打开之时就已经开了一个本地代理端口 <a href="http://127.0.0.1:1080，接下来就配合chrome扩展[SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)使用shadowsocks。" target="_blank" rel="external">http://127.0.0.1:1080，接下来就配合chrome扩展[SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)使用shadowsocks。</a><br>SwitchyOmega中有四种情景模式，本文介绍前三种模式，第四种“虚情景模式”笔者也不知道如何使用。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/3.jpg" alt="4"><br>在设置好每一个情景模式后注意点击 <code>应用选项</code> 保存你的设置。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/8.jpg" alt="5"></p>
+<h3 id="三-高级用法："><a href="#三-高级用法：" class="headerlink" title="三. 高级用法："></a>三. 高级用法：</h3><p>高级用法是在不勾选 <code>启用系统代理</code> 的基础上进行的。shadowsocks在打开之时就已经开了一个本地代理端口 <a href="http://127.0.0.1:1080" target="_blank" rel="external">http://127.0.0.1:1080</a> ， 接下来就配合chrome扩展<a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="external">SwitchyOmega</a>使用shadowsocks。</p>
+<p>SwitchyOmega中有四种情景模式，本文介绍前三种模式，第四种“虚情景模式”笔者也不知道如何使用。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/3.jpg" alt="4"><br>在设置好每一个情景模式后注意点击 <code>应用选项</code> 保存你的设置。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/8.jpg" alt="5"></p>
 <h4 id="1-代理服务器模式"><a href="#1-代理服务器模式" class="headerlink" title="1. 代理服务器模式"></a>1. 代理服务器模式</h4><p>情景模式名称为“<strong>proxy</strong>”,代理协议为“<strong>SOCKS5</strong>”，代理服务器为“<strong>127.0.0.1</strong>”，端口为“<strong>1080</strong>”。设置完毕后如图所示。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/4.jpg" alt="6"></p>
-<h4 id="2-自动切换模式"><a href="#2-自动切换模式" class="headerlink" title="2. 自动切换模式"></a>2. 自动切换模式</h4><p>情景模式名称为“<strong>SS-Autoproxy</strong>”,规则列表规则对应的情景模式为“<strong>proxy</strong>”（即刚才建立的代理服务器模式），默认情景模式为“<strong>直接连接</strong>”。<br>规则列表格式选择 “<strong>AutoProxy</strong>”,规则列表网址为<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt，点击" target="_blank" rel="external">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt，点击</a> <code>立即更新情景模式</code>，将规则列表下载到SwitchyOmega中。<br><strong>解释</strong>：规则列表中的网址是网友收集的需要翻墙才能访问的网址，当SwitchyOmega发现你访问的网址在规则列表中时，就自动调用“<strong>proxy模式</strong>”（即使用shadowsocks的本地端口翻墙），否则访问一般国内的网址时（不在规则列表上）就采用默认情景模式“<strong>直接连接</strong>”，这样达到了自动切换的目的。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/5.1.jpg" alt="7"></p>
+<h4 id="2-自动切换模式"><a href="#2-自动切换模式" class="headerlink" title="2. 自动切换模式"></a>2. 自动切换模式</h4><p>情景模式名称为“<strong>SS-Autoproxy</strong>”,规则列表规则对应的情景模式为“<strong>proxy</strong>”（即刚才建立的代理服务器模式），默认情景模式为“<strong>直接连接</strong>”。<br>规则列表格式选择 “<strong>AutoProxy</strong>”,规则列表网址为<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank" rel="external">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</a> ，点击 <code>立即更新情景模式</code>，将规则列表下载到SwitchyOmega中。<br><strong>解释</strong>：规则列表中的网址是网友收集的需要翻墙才能访问的网址，当SwitchyOmega发现你访问的网址在规则列表中时，就自动调用“<strong>proxy模式</strong>”（即使用shadowsocks的本地端口翻墙），否则访问一般国内的网址时（不在规则列表上）就采用默认情景模式“<strong>直接连接</strong>”，这样达到了自动切换的目的。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/5.1.jpg" alt="7"></p>
 <h4 id="3-PAC情景模式"><a href="#3-PAC情景模式" class="headerlink" title="3. PAC情景模式"></a>3. PAC情景模式</h4><p>shadowsocks客户端中选择“<strong>使用本地PAC</strong>”（推荐做法，方便个人定制，pac的编写请自己搜索），本地pac文件可从GFWList中更新，如图所示。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/7.jpg" alt="8"><br>SwitchyOmega新建情景模式名称为“<strong>SS-pac</strong>”，PAC网址为“<strong><a href="http://127.0.0.1:1080/pac.txt" target="_blank" rel="external">http://127.0.0.1:1080/pac.txt</a></strong>” (此处设置为使用本地pac文件，pac文件是shadowsocks已经自动建立好的，不需要额外设置)，点击 <code>立即更新情景模式</code>，将SwitchyOmega中的pac脚本更新。<br><img src="http://7xkzrn.com1.z0.glb.clouddn.com/6.jpg" alt="9"><br><strong>解释</strong>：pac文件中的网址是需要翻墙访问的，SwitchyOmega选择“<strong>SS-pac</strong>”情景模式后，SwitchyOmega会对你将要访问的网址进行判断，在pac文件中的网址就自动代理，否则就直接连接，即达到上述2.自动切换模式的效果。</p>
 <p>至此三种情景模式已经介绍完毕，使用时选择一个情景模式，就来到了久违的“世界网”！<img src="http://7xkzrn.com1.z0.glb.clouddn.com/9.1.jpg" alt="10"></p>
 <h3 id="四-共享翻墙网络"><a href="#四-共享翻墙网络" class="headerlink" title="四. 共享翻墙网络"></a>四. 共享翻墙网络</h3><p>举个例子，现在你的笔记本电脑 <strong>A</strong> 已经开了shadowsocks客户端，如果你想让处在同一局域网的其他小伙伴也一起翻墙，那么该怎么做呢？</p>
@@ -203,17 +204,17 @@
 	
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目錄</strong>
+  <strong class="toc-title">Contents</strong>
  
  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#shadowsocks入门教程"><span class="toc-number">1.</span> <span class="toc-text">shadowsocks入门教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-准备工作："><span class="toc-number">1.0.1.</span> <span class="toc-text">一. 准备工作：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-基本用法："><span class="toc-number">1.0.2.</span> <span class="toc-text">二. 基本用法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-高级用法："><span class="toc-number">1.0.3.</span> <span class="toc-text">三. 高级用法：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-代理服务器模式"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">1. 代理服务器模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-自动切换模式"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">2. 自动切换模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-PAC情景模式"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">3. PAC情景模式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-共享翻墙网络"><span class="toc-number">1.0.4.</span> <span class="toc-text">四. 共享翻墙网络</span></a></li></ol></li></ol></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
@@ -224,7 +225,7 @@
   
 
   <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -246,11 +247,11 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
+  <p class="asidetitle">Weibo</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
 </div>
 
@@ -477,7 +478,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
