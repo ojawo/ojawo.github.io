@@ -116,7 +116,7 @@
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017071208.png">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017071209.png">
 <meta property="og:image" content="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017071210.png">
-<meta property="og:updated_time" content="2017-07-17T07:34:12.822Z">
+<meta property="og:updated_time" content="2017-07-17T07:42:14.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="神经网络入门">
 <meta name="twitter:description" content="最近在看关于孤岛效应的论文时，有很多论文使用了机器学习的方法来设定判定孤岛状态的阈值，因此对机器学习开始感兴趣，加之本人对编程一直都有很大的兴趣，可以说是不谋而合。未来论文可能会采用机器学习的思路来写。在机器学习中有一些算法，如决策树、神经网络、支持向量机等，今天看到一篇写神经网络的文章，觉得写的很好，通俗易懂，因此转载到我的博客中。
@@ -505,13 +505,9 @@
 <h2 id="八、输出的连续性"><a href="#八、输出的连续性" class="headerlink" title="八、输出的连续性"></a>八、输出的连续性</h2><p>上面的模型有一个问题没有解决，按照假设，输出只有两种结果：0和1。但是，模型要求<code>w</code>或<code>b</code>的微小变化，会引发输出的变化。如果只输出<code>0</code>和<code>1</code>，未免也太不敏感了，无法保证训练的正确性，因此必须将”输出”改造成一个连续性函数。</p>
 <p>这就需要进行一点简单的数学改造。</p>
 <p>首先，将感知器的计算结果<code>wx + b</code>记为<code>z</code>。</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; z = wx + b</div><div class="line">&gt;</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">z = wx + b</div></pre></td></tr></table></figure>
 <p>然后，计算下面的式子，将结果记为<code>σ(z)</code>。</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; σ(z) = 1 / (1 + e^(-z))</div><div class="line">&gt;</div></pre></td></tr></table></figure>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">σ(z) = 1 / (1 + e^(-z))</div></pre></td></tr></table></figure>
 <p>这是因为如果<code>z</code>趋向正无穷<code>z → +∞</code>（表示感知器强烈匹配），那么<code>σ(z) → 1</code>；如果<code>z</code>趋向负无穷<code>z → -∞</code>（表示感知器强烈不匹配），那么<code>σ(z) → 0</code>。也就是说，只要使用<code>σ(z)</code>当作输出结果，那么输出就会变成一个连续性函数。</p>
 <p>原来的输出曲线是下面这样。</p>
 <p><img src="http://www.ruanyifeng.com/blogimg/asset/2017/bg2017071208.png" alt="img"></p>
